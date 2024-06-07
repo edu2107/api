@@ -15,9 +15,10 @@
     //echo $req["REQUEST_METHOD"];
      switch ($req["REQUEST_METHOD"]) {
          case 'GET':
-            $usuarios = json_encode(pegar_usuario($conexao));
-            echo $usuarios;
+            $carros = json_encode(pegar_usuario($conexao));
+            echo $carros;
              break;
+             
          case 'POST':
              
              $u = receberDados();
