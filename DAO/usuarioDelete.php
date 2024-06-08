@@ -3,7 +3,7 @@
 
    function deletar_usuario($conexao, $id){
 
-        $sql = "DELETE FROM tbl_usuarios WHERE id = $id;";
+        $sql = "DELETE FROM carros WHERE id = $id;";
         $res = mysqli_query($conexao, $sql) or die("Erro ao tentar deletar");
 
 

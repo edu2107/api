@@ -2,10 +2,11 @@
    
    function incluir_usuario($conexao, $u){
 
-        $sql = "INSERT INTO tbl_usuarios (nome, email, telefone, dataNascimento, senha, papel) VALUES ('$u->nome', '$u->email','$u->telefone', '$u->dataNascimento', '$u->senha','$u->papel');";
+        $sql = "INSERT INTO carros (tipo, marca, modelo, ano, preco, quilometragem, descricao) VALUES ('$carro->tipo', '$carro->marca','$carro->modelo', '$carro->ano', '$carro->preco','$carro->quilometragem', '$carro->descricao');";
         $res = mysqli_query($conexao, $sql) or die("Erro ao tentar incluir");
         fecharConexao($conexao);
         return $res;
    };
 
 ?>
+

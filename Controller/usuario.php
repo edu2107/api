@@ -21,10 +21,10 @@
              
          case 'POST':
              
-             $u = receberDados();
+             $carro = receberDados();
              
     
-             $resp = incluir_usuario($conexao, $u);
+             $resp = incluir_usuario($conexao, $carro);
              
              $in = new Resposta('', '');
                 if($resp){
@@ -40,9 +40,9 @@
             $dados = json_decode(file_get_contents('php://input'));
             $id = $dados->id;
 
-            $u = receberDados();
+            $carro = receberDados();
 
-            $resp = editar_usuario($conexao, $u, $id);
+            $resp = editar_usuario($conexao, $carro, $id);
 
             $in = new Resposta('', '');
                 if($resp){
